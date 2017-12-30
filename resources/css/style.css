@@ -2,6 +2,8 @@
 *{
   font-family: Helvetica;
   color: seashell;
+  opacity: 0.9;
+  font-size: 22px;
 }
 
 body{
@@ -11,6 +13,7 @@ body{
 /* HEADER START*/
 
 header{
+  margin-top: 0px;
   display: flex;
   position: fixed;
   height: 69px;
@@ -39,7 +42,9 @@ nav span{
 
 /* HEADER ENDS */
 
-/* CONTENT STARTS */
+/* CONTENT STARTS
+content is divided in 3 Containers
+*/
 
 .cont{
   display: flex;
@@ -48,6 +53,8 @@ nav span{
   margin: 0px 20px;
   padding: 70px 0px;
 }
+
+/* cont1 = upper picture and title starts */
 
 .cont1{
   display: flex;
@@ -63,6 +70,19 @@ nav span{
   text-align: center;
 }
 
+.item1 h2{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.item1 h4{
+  font-size: 25px;
+  font-family: helvetica;
+  font-weight: normal;
+}
+
+/* cont1 ENDS, cont2 = "Tea of the month" section STARTS*/
+
 .cont2{
   padding: 30px;
   display: flex;
@@ -74,9 +94,9 @@ nav span{
   flex-wrap: wrap;
 }
 
-.title2{
-  flex: 2 2 1000;
-}
+
+
+/* All images are items of a "img2cont" container  */
 
 .img2cont{
   display: flex;
@@ -90,4 +110,73 @@ nav span{
   width: 300px;
   height: 200px;
   text-align: center;
+}
+
+/* cont2 ENDS
+- cont3 = "Location" STARTS
+- cont3 contains 4 items: Title + boxes with texts arranged in rows.
+- Each box is a container arranged in columns */
+
+.cont3{
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 1200px;
+  background-image: url(../../resources/images/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: flex-start;
+}
+
+.cont3-1{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row;
+  width: 1200px;
+  height: 100px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cont3-2{
+  margin: 0px;
+  display: flex;
+  width: 1200px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item3-2-1{
+  display: flex;
+  flex-flow: column;
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 20px 0px 0px;
+}
+
+.item3-2-2{
+  display: flex;
+  flex-flow: column;
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 20px 0px 20px;
+}
+
+.item3-2-3{
+  display: flex;
+  flex-flow: column;
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 0px 0px 20px;
 }

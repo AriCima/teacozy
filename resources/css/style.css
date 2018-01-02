@@ -66,8 +66,10 @@ content is divided in 3 Containers
 
 .item1{
   width: 1200px;
+  height: auto;
   background-color: black;
   text-align: center;
+  opacity: 0.9;
 }
 
 .item1 h2{
@@ -77,7 +79,6 @@ content is divided in 3 Containers
 
 .item1 h4{
   font-size: 25px;
-  font-family: helvetica;
   font-weight: normal;
 }
 
@@ -92,28 +93,56 @@ content is divided in 3 Containers
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
+.cont2 h2{
+font-size: 35px;
+font-weight: bold;
+}
 
+.cont2 h4{
+font-size: 25px;
+font-weight: bold;
+}
 
-/* All images are items of a "img2cont" container  */
+/*  TEA OF THE MONTH section starts
+Container "a" (flow=rows)
+    Subcontainer "b" = image + text (flow=column)*/
 
-.img2cont{
+.a{
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   width: 1000px;
-  justify-content: space-around;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.img2item{
-  width: 300px;
-  height: 200px;
-  text-align: center;
+.b{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 10px 10px;
 }
 
-/* cont2 ENDS
-- cont3 = "Location" STARTS
+
+.text{
+  width: auto;
+  height: auto;
+  text-align: top;
+  margin: 10px 0px 0px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+
+/* "TEA OF THE MONTH" ENDS
+- "LOCATION" STARTS
 - cont3 contains 4 items: Title + boxes with texts arranged in rows.
 - Each box is a container arranged in columns */
 
@@ -179,4 +208,10 @@ content is divided in 3 Containers
   justify-content: center;
   text-align: center;
   margin: 0px 0px 0px 20px;
+}
+
+.contact{
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
 }

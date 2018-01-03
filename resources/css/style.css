@@ -3,7 +3,6 @@
   font-family: Helvetica;
   color: seashell;
   opacity: 0.9;
-  font-size: 22px;
 }
 
 body{
@@ -13,7 +12,6 @@ body{
 /* HEADER START*/
 
 header{
-  margin-top: 0px;
   display: flex;
   position: fixed;
   height: 69px;
@@ -31,10 +29,6 @@ header{
   padding: 10px;
 }
 
-nav {
-  padding: 10px;
-}
-
 nav span{
   font-size: 22px;
   text-decoration: underline;
@@ -43,7 +37,7 @@ nav span{
 /* HEADER ENDS */
 
 /* CONTENT STARTS
-content is divided in 3 Containers
+content is divided in 4 Containers "cont1, cont2, cont3, contact"
 */
 
 .cont{
@@ -69,11 +63,10 @@ content is divided in 3 Containers
   height: auto;
   background-color: black;
   text-align: center;
-  opacity: 0.9;
 }
 
 .item1 h2{
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
 }
 
@@ -87,12 +80,11 @@ content is divided in 3 Containers
 .cont2{
   padding: 30px;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   width: 1000px;
   height: auto;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   text-align: center;
 }
 
@@ -148,33 +140,36 @@ Container "a" (flow=rows)
 
 .cont3{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column;
   height: 500px;
   width: 1200px;
   background-image: url(../../resources/images/img-locations-background.jpg);
   background-size: cover;
   background-position: center;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: center;
 }
 
 .cont3-1{
-  margin: 0px;
-  padding: 0px;
   display: flex;
-  flex-flow: row;
   width: 1200px;
   height: 100px;
   justify-content: center;
-  align-items: flex-end;
+  align-items:flex-end;
+}
+
+.cont3-1 span{
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .cont3-2{
-  margin: 0px;
+  margin: 15px 0px 0px 0px;
   display: flex;
   width: 1200px;
   height: 400px;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
 }
 
 .item3-2-1{
@@ -211,7 +206,17 @@ Container "a" (flow=rows)
 }
 
 .contact{
+  height: 200px;
   width: 100%;
   text-align: center;
   opacity: 0.9;
+  font-size: 22px;
+}
+
+#copyright{
+  margin: 0px 0px 0px 20px;
+  font-size: 8px;
+  font-family: helvetica;
+  opacity: 0.9;
+  font-weight: bold;
 }
